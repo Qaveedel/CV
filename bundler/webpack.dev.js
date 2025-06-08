@@ -43,8 +43,8 @@ module.exports = merge(
                 const port = devServer.options.port
                 const https = devServer.options.https ? 's' : ''
                 const localIp = ip.address()
-                const domain1 = `http${https}://${localIp}:${port}`
-                const domain2 = `http${https}://localhost:${port}`
+                const domain1 = `http${https}://195.88.208.216:${port}`
+                const domain2 = `http${https}://195.88.208.216:${port}`
                 
                 console.log(`Project running at:\n  - ${infoColor(domain1)}\n  - ${infoColor(domain2)}`)
             }
