@@ -184,17 +184,17 @@ export default class MonitorScreen extends EventEmitter {
 
         // Set iframe attributes
         // PROD
-        iframe.src = 'http://195.88.208.216:3000/';
+        iframe.src = 'https://os.qaveedel.ir/';
         /**
          * Use dev server is query params are present
          *
-         * Warning: This will not work unless the dev server is running on 195.88.208.216:3000
+         * Warning: This will not work unless the dev server is running on os.qaveedel.ir:3000
          * Also running the dev server causes browsers to freak out over unsecure connections
          * in the iframe, so it will flag a ton of issues.
          */
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.has('dev')) {
-            iframe.src = 'http://195.88.208.216:3000/';
+            iframe.src = 'https://os.qaveedel.ir/';
         }
         iframe.style.width = this.screenSize.width + 'px';
         iframe.style.height = this.screenSize.height + 'px';
